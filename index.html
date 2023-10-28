@@ -19,12 +19,30 @@
         </div>
         <div>
             <h2>Fascia d'etá</h2>
-            <input id="inputEta" type="text">
+            <select id="inputEta" name="eta">
+            <option value="17">Minorenne (-18)</option>
+            <option value="18">Maggiorenne (+18)</option>
+            <option value="66">Senior (+65)</option>
+            </select>
         </div>
+        <button id="sentBtn">Invio</button>
     </section>
 
     <section id="your-ticket">
+        <h2>NOME PASSEGGERO</h2>
+        <h3 id="utente"></h3>
 
+        <h4>Offerta</h2>
+        <p id="offerta"></p>
+
+        <h4>Carrozza</h2>
+        <p id="carrozza"></p>
+
+        <h4>Codice CP</h2>
+        <p id="codice"></p>
+
+        <h4>Costo</h2>
+        <p id="price"></p>
     </section>
 
     <script src="main.js"></script>
