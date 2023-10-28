@@ -47,7 +47,7 @@ btn.addEventListener("click", function() {
 
 		//Inserimento valori nei campi
 		document.getElementById("utente").innerHTML = utente.value;
-		document.getElementById("price").innerHTML = finalPrice;
+		document.getElementById("price").innerHTML = finalPrice + "&euro;";
 	}
 
 	

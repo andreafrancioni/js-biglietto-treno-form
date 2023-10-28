@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolitalo</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+    <body>
 
-    <section id="buy-ticket">
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div>
-            <h2>Nome Cognome</h2>
-            <input id="inputName" type="text">
+        <!-- TICKET CALCULATOR -->
+        <div class="container">
+            <section id="buy-ticket">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+                        </div>
+                    </div>
+                    <div class="row border rounded bg-white p-5">
+                        <div class="col-4 text-center">
+                            <h2>Nome Cognome</h2>
+                            <input id="inputName" type="text">
+                        </div>
+                        <div class="col-4 text-center">
+                            <h2>Km da percorrere</h2>
+                            <input id="inputKm" type="text">
+                        </div>
+                        <div class="col-4 text-center">
+                            <h2>Fascia d'etá</h2>
+                            <select id="inputEta" name="eta">
+                                <optgroup>
+                                    <option value="17">Minorenne (-18)</option>
+                                    <option value="18">Maggiorenne (+18)</option>
+                                    <option value="66">Senior (+65)</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center pt-5">
+                            <button id="sentBtn" class="btn me-3">Genera</button>
+                            <button id="clearBtn" class="btn">Annulla</button>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- YOUR TICKET -->
+            <section id="your-ticket">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="text-white">IL TUO BIGLIETTO</h1>
+                        </div>
+                    </div>
+                    <div class="row border rounded bg-white p-5">
+                        <div class="col-12 border-bottom border-secondary">
+                            <h2>DETTAGLIO PASSEGGERI</h2>
+                        </div>
+                        <div class="col-4 bg-gray border-bottom border-secondary">
+                            <h2>NOME PASSEGGERO</h2>
+                            <h3 id="utente"></h3>
+                        </div>
+                        <div class="col-3 border-bottom border-secondary">
+                            <h4>Offerta</h2>
+                            <p id="offerta"></p>
+                        </div>
+                        <div class="col-2 border-bottom border-secondary">
+                            <h4>Carrozza</h2>
+                            <p id="carrozza"></p>
+                        </div>
+                        <div class="col-2 border-bottom border-secondary">
+                            <h4>Codice CP</h2>
+                            <p id="codice"></p>
+                        </div>
+                        <div class="col-1 border-bottom border-secondary">
+                            <h4>Costo</h2>
+                            <p id="price"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div>
-            <h2>Km da percorrere</h2>
-            <input id="inputKm" type="text">
-        </div>
-        <div>
-            <h2>Fascia d'etá</h2>
-            <select id="inputEta" name="eta">
-            <option value="17">Minorenne (-18)</option>
-            <option value="18">Maggiorenne (+18)</option>
-            <option value="66">Senior (+65)</option>
-            </select>
-        </div>
-        <button id="sentBtn">Invio</button>
-    </section>
-
-    <section id="your-ticket">
-        <h2>NOME PASSEGGERO</h2>
-        <h3 id="utente"></h3>
-
-        <h4>Offerta</h2>
-        <p id="offerta"></p>
-
-        <h4>Carrozza</h2>
-        <p id="carrozza"></p>
-
-        <h4>Codice CP</h2>
-        <p id="codice"></p>
-
-        <h4>Costo</h2>
-        <p id="price"></p>
-    </section>
-
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+    </body>
 </html>

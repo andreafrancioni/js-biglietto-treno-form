@@ -5,3 +5,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #B91450!important;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.btn{
+    border: 1px solid gray!important;
+    background-color: lightgray!important;
+    color: #B91450!important;
+    font-size: 1.5rem!important;
+}
+
+#buy-ticket h2{
+    color: #B91450!important;
+}
+
+input{
+    border: 1px solid #B91450!important;
+    border-radius: 0.5em;
+    height: 3rem;
+    width: 20rem;
+    text-align: center;
+}
+
+input[type="text"]
+{
+    font-size:2rem;
+}
+
+select{
+    border: 1px solid #B91450!important;
+    border-radius: 0.5em;
+    height: 3rem;
+    width: 15rem;
+}
+
+optgroup {
+    font-size:4rem;
+}
+
+p{
+    padding-top: 4rem;
+    font-size: 1.5rem;
+}
+
+/* COLORS */
+.bg-gray  {background-color: gray;}
