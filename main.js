@@ -3,6 +3,7 @@ let utente = document.getElementById("inputName");
 let kmPercorsi = document.getElementById("inputKm");
 let eta = document.getElementById("inputEta");
 let btn = document.getElementById("sentBtn");
+let clear = document.getElementById("clearBtn");
 let offerta = document.getElementById("offerta");
 let priceDiscount = 0;
 let finalPrice = 0;
@@ -51,4 +52,9 @@ btn.addEventListener("click", function() {
 	}
 
 	
+});
+
+clear.addEventListener("click", function() {
+	utente.value="";
+	kmPercorsi.value="";
 });
